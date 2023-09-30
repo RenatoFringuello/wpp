@@ -1,14 +1,5 @@
 body{
-    // bruno ace - roboto 
-    font-family: 'Roboto' !important;
-    color: $comp-accent-color;
-    background: $accent-color;
-
-    :not(a){
-        color: inherit !important;
-    }
-
-    section.main-section{
-        margin-top : 56px;
-    }
+    font-family: 'Klee One' !important;
+    color: $accent-color;
+    background: $main-color;
 }
