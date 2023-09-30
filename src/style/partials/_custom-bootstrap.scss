@@ -1,35 +1,35 @@
 // my-title
 .my-title{
     font-family: 'Parisienne' !important;
-    font-size: 2.5rem;
-    color: $comp-color;
-    text-align: center;
+    font-size: 2.5rem ;
+    color: $comp-color ;
+    text-align: center ;
 }
 
 // bg color
 .bg-main{
-    background-color: $main-color !important;
+    background-color: $main-color;
 }
 .bg-comp{
-    background-color: $comp-color !important;
+    background-color: $comp-color ;
 }
 .bg-accent{
-    background-color: $accent-color !important;
+    background-color: $accent-color ;
 }
 .bg-comp-accent{
-    background-color: $comp-accent-color !important;
+    background-color: $comp-accent-color ;
 }
 
 // text-color
 .text-main{
-    color: $main-color !important;
+    color: $main-color ;
 }
 .text-comp{
-    color: $comp-color !important;
+    color: $comp-color ;
 }
 .text-accent{
-    color: $accent-color !important;
+    color: $accent-color ;
 }
 .text-comp-accent{
-    color: $comp-accent-color !important;
+    color: $comp-accent-color ;
 }
