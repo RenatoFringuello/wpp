@@ -1,9 +1,63 @@
 // my-title
-.my-title{
+.my-title,
+.my-sub-title{
     font-family: 'Parisienne' !important;
-    font-size: 2.5rem ;
     color: $comp-color ;
     text-align: center ;
+}
+.my-title{
+    font-size: 3.5rem ;
+
+}
+.my-sub-title{
+    font-size: 1.5rem ;
+}
+
+//inputs and textarea
+textarea,
+input[type="text"]{
+    width: 100%;
+    background-color: #0000;
+    padding: .5rem 1rem;    
+    border:none;
+    border-bottom: 1px solid $accent-color;
+    color: $comp-color;
+    font-size: 1.5rem;
+    position: relative;
+
+    &:hover{
+        background-color: #fff2;
+    }
+    &:active, 
+    &:focus,
+    &:focus-visible{
+        outline:none;
+        border-color: $comp-color;
+    }
+    &::placeholder {
+        color: #606060; // per correggere il color dell'input
+    }
+}
+
+//buttons
+button, 
+a.button,
+input[type="submit"]{
+    min-width: 100px;
+    display: block;
+    background: none;
+    text-decoration: none;
+    border:0;
+    border-bottom: 3px solid $comp-color;
+    padding: .5rem 1rem .6rem;
+    color: $comp-color;
+    text-align: center;
+    transition: .2s ease-in;
+
+    &:hover{
+        background-color: $comp-color;
+        color: $comp-accent-color;
+    }
 }
 
 // bg color
