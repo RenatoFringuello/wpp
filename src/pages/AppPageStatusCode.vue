@@ -15,7 +15,7 @@
         <div class="m-auto">
             <div class="error-code">{{ $route.name }}</div>
             <div class="fs-2 fw-bold">{{ getStatusData($route.name).name }}</div>
-            <div class="fs-4 my-text-secondary">{{ getStatusData($route.name).description }}.</div>
+            <div class="fs-4">{{ getStatusData($route.name).description }}.</div>
         </div>
     </div>
 </template>
@@ -77,6 +77,7 @@ export default {
         line-height: 1;
         font-size: clamp(9rem, 25vw, 16rem);
         text-shadow: clamp(7px, 1vw, 10px) clamp(7px, 1vw, 10px) 0 $main-color;
+        font-family: $heading-font;
     }
 }
 </style>
