@@ -1,32 +1,67 @@
-// my-title
+// my-text
 .my-title,
 .my-sub-title{
-    font-family: 'Parisienne' !important;
-    color: $comp-color ;
+    font-family: $title-font;
+    color: $accent-gray-color ;
     text-align: center ;
 }
 .my-title{
     font-size: 3.5rem ;
-
 }
 .my-sub-title{
     font-size: 1.5rem ;
+}
+.my-italic{
+    font-style: italic;
+}
+// .my-title,
+// .my-sub-title{
+//     font-family: $title-font;
+//     color: $comp-color ;
+//     text-align: center ;
+// }
+// .my-title{
+//     font-size: 3.5rem ;
+
+// }
+// .my-sub-title{
+//     font-size: 1.5rem ;
+// }
+
+// message-box
+.message-box{
+    border: 1px solid;
+    border-bottom: 4px solid;
+    padding: 0.5rem 1rem;
+
+    &.success{
+        color: $success-strong-color;
+        background-color: $success-soft-color;
+    }
+    &.warn{
+        color: $warn-strong-color;
+        background-color: $warn-soft-color;
+    }
+    &.error{
+        color: $error-strong-color;
+        background-color: $error-soft-color;
+    }
 }
 
 //inputs and textarea
 textarea,
 input[type="text"]{
     width: 100%;
-    background-color: #0000;
+    background-color: #fff2;
     padding: .5rem 1rem;    
     border:none;
     border-bottom: 1px solid $accent-color;
     color: $comp-color;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     position: relative;
 
     &:hover{
-        background-color: #fff2;
+        background-color: #fff3;
     }
     &:active, 
     &:focus,
@@ -45,7 +80,7 @@ a.button,
 input[type="submit"]{
     min-width: 100px;
     display: block;
-    background: none;
+    background: #0000;
     text-decoration: none;
     border:0;
     border-bottom: 3px solid $comp-color;
@@ -53,10 +88,19 @@ input[type="submit"]{
     color: $comp-color;
     text-align: center;
     transition: .2s ease-in;
-
-    &:hover{
+    
+    &:not(.disabled):hover{
         background-color: $comp-color;
         color: $comp-accent-color;
+    }
+    
+    &.disabled{
+        color: $accent-gray-color;
+        border-bottom: 3px solid $accent-gray-color;
+        
+        &:hover{
+            background-color: #0000;
+        }
     }
 }
 
